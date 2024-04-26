@@ -1,0 +1,21 @@
+:root {
+    --color-base: #282828;
+    --color-blue: #357bf4;
+    --color-orange: #fe5a24;
+}
+
+$fontBase: "Manrope", "sans-serif";
+
+.mt0 {
+    margin-top: 0;
+}
+
+
+.fc {
+    display: flex;
+    align-self: center;
+}
+
+.p0 {
+    padding: 0 !important;
+}

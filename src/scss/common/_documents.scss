@@ -1,0 +1,24 @@
+.documents__title {
+    margin-bottom: 64px;
+    @media (max-width: 767px) {
+        margin-bottom: 16px;
+    }
+}
+
+.documents__wrap {
+    display: flex;
+    gap: 24px;
+    a {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    img {
+        background-color: #d9d9d9;
+        border-radius: 16px;
+        width: 100px;
+    }
+    @media (max-width: 767px) {
+        gap: 14px;
+    }
+}

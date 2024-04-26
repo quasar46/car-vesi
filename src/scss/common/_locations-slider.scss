@@ -1,0 +1,21 @@
+.locations-slider {
+    font-size: 24px;
+    font-weight: 400;
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        font-family: $fontBase;
+        img {
+            border-radius: 16px;
+            height: 440px;
+            object-fit: cover;
+        }
+        @media (max-width: 767px) {
+            gap: 8px;
+        }
+    }
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
+}

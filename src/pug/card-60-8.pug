@@ -1,0 +1,273 @@
+extends layout
+block main 
+	main
+		section.breadcrumbs 
+			.container 
+				ul.breadcrumbs__list
+					li.breadcrumbs__item 
+						a(href="index.html") Главная
+					li.breadcrumbs__item 
+						a(href="catalog.html") Каталог
+					li.breadcrumbs__item 
+						span Автовесы ЗЕВС 60 тонн 8 метров (60/8)
+		section.card 
+			.container 
+				.card__wrap 
+					h2.title.card__title 
+						span Автовесы 8м 60т 
+						span (ЗЕВС – 60/8)
+					.card__block 
+						.card__block-content
+							.card__left-aside 
+								.card__pic 
+									img(src=require("../images/IMG_3391 1.png"), alt="")
+									img.nastil.hidden(src=require('../images/options/blue/1.PNG'), alt='')
+									img.pandus.hidden(src=require('../images/options/blue/3.PNG'), alt='')
+									img.nastil.pandus.hidden(src=require('../images/options/blue/4.PNG'), alt='')
+									img.nastil.pandus.bokovoe.hidden(src=require('../images/options/blue/5.PNG'), alt='')
+									img.bokovoe.pandus.hidden(src=require('../images/options/blue/6.PNG'), alt='')
+									img.bokovoe.hidden(src=require('../images/options/blue/7.PNG'), alt='')
+									img.nastil.bokovoe.hidden(src=require('../images/options/blue/8.PNG'), alt='')
+
+
+									img.auto.hidden(src=require('../images/options/blue-automat/1.PNG'), alt='')
+									img.auto.nastil.hidden(src=require('../images/options/blue-automat/2.PNG'), alt='')
+									img.auto.pandus.hidden(src=require('../images/options/blue-automat/3.PNG'), alt='')
+									img.auto.pandus.nastil.hidden(src=require('../images/options/blue-automat/4.PNG'), alt='')
+									img.auto.pandus.nastil.bokovoe.hidden(src=require('../images/options/blue-automat/5.PNG'), alt='')
+									img.auto.nastil.bokovoe.hidden(src=require('../images/options/blue-automat/6.PNG'), alt='')
+									img.auto.bokovoe.hidden(src=require('../images/options/blue-automat/7.PNG'), alt='')
+									img.auto.pandus.bokovoe.hidden(src=require('../images/options/blue-automat/8.PNG'), alt='')
+
+
+									img.pokraska.hidden(src=require('../images/options/green/1.PNG'), alt='')
+									img.pokraska.pandus.hidden(src=require('../images/options/green/2.PNG'), alt='')
+									img.pokraska.bokovoe.nastil.pandus.hidden(src=require('../images/options/green/4.PNG'), alt='')
+									img.pokraska.pandus.bokovoe.hidden(src=require('../images/options/green/5.PNG'), alt='')
+									img.pokraska.bokovoe.hidden(src=require('../images/options/green/6.PNG'), alt='')
+									img.pokraska.nastil.pandus.hidden(src=require('../images/options/green/7.PNG'), alt='')
+									img.pokraska.nastil.hidden(src=require('../images/options/green/8.PNG'), alt='')
+
+
+									img.pokraska.auto.hidden(src=require('../images/options/green-automat/1.PNG'), alt='')
+									img.pokraska.auto.nastil.hidden(src=require('../images/options/green-automat/2.PNG'), alt='')
+									img.pokraska.auto.pandus.hidden(src=require('../images/options/green-automat/3.PNG'), alt='')
+									img.pokraska.auto.pandus.nastil.hidden(src=require('../images/options/green-automat/4.PNG'), alt='')
+									img.pokraska.auto.pandus.bokovoe.hidden(src=require('../images/options/green-automat/6.PNG'), alt='')
+									img.pokraska.auto.bokovoe.hidden(src=require('../images/options/green-automat/7.PNG'), alt='')
+									img.pokraska.auto.nastil.bokovoe.hidden(src=require('../images/options/green-automat/8.PNG'), alt='')
+									img.pokraska.auto.bokovoe.nastil.pandus.hidden(src=require('../images/options/green-automat/5.PNG'), alt='')
+								.card__options 
+									span Дополнительные опции
+									.card__options-block.swiper.option-slider
+										.swiper-wrapper#options
+											.swiper-slide 
+												.card__options-item
+													input(type="checkbox" id="o1" name="options" value="nastil" data-price="60000")
+													label(for="o1" data-name="Серединный настил" data-descr="Предназначен для защиты конструкции от попадания грязи, инертных материалов, посторонних предметов.") 
+														img(src=require("../images/default cart.svg"), alt="")
+														img(src=require("../images/IMG_3448 2.svg"), alt="")
+											.swiper-slide 
+												.card__options-item
+													input(type="checkbox" id="o2" name="options" value="pandus" data-price="190000")
+													label(for="o2" data-name="Пандусы металлические" data-descr="Предназначены для безфундаментной установки на дорожные плиты или ровную бетонную поверхность.") 
+														img(src=require("../images/default cart-1.svg"), alt="")
+														img(src=require("../images/IMG_3448 3.svg"), alt="")
+											.swiper-slide 
+												.card__options-item
+													input(type="checkbox" id="o3" name="options" value="pokraska" data-price="10000")
+													label(for="o3" data-name="Фирменный цвет" data-descr="По умолчанию цвет весов синий. Мы можем перекрасить весы в любой цвет.") 
+														img(src=require("../images/default cart-2.svg"), alt="")
+														img(src=require("../images/IMG_3448 4.svg"), alt="")
+											.swiper-slide 
+												.card__options-item
+													input(type="checkbox" id="o4" name="options" value="bokovoe" data-price="62000")
+													label(for="o4" data-name="Боковые (колесные) ограничители" data-descr="Предназначено для визуального обозначения проезжей части.") 
+														img(src=require("../images/default cart-3.svg"), alt="")
+														img(src=require("../images/IMG_3448 5.svg"), alt="")
+											.swiper-slide 
+												.card__options-item
+													input(type="checkbox" id="o5" name="options" value="auto" data-price="400000")
+													label(for="o5" data-name="Автоматизация" data-descr="Спроектируем и внедрим комплект оборудования для автоматического взвешивания и распознавания грузовых автомобилей") 
+														img(src=require("../images/icn-screen.svg"), alt="")
+														img(src=require("../images/icn-screen-active.svg"), alt="")
+										.swiper-pagination 
+									.card__count Выбрано: &nbsp;
+										span 
+											#countOptions 0
+											| шт.
+									.card__descr.hidden
+										span.card__descr-name
+										p.card__descr-text 
+
+							.card__right-aside 
+								.card__char
+									.tab-container
+										.tabs 
+											a(href="card-60-18.html").tab 18 метров
+											a(href="card-60-16.html").tab 16 метров
+											a(href="card-60-12.html").tab 12 метров
+											a.tab.active 8 метров
+										.tab-panes 
+											.tab-pane.active 
+												ul.card__list 
+													.card__list-item
+														span Тип весов
+														span
+														span Автовесы ЗЕВС 60 тонн
+													.card__list-item
+														span Грузоприемная платформа
+														span
+														span 2 шт. (4м) 
+													.card__list-item
+														span Тензодатчик
+														span
+														span 6 шт.
+													.card__list-item
+														span Распределительная коробка
+														span
+														span 1 шт.
+													.card__list-item
+														span Индикатор веса
+														span
+														span 1 шт.
+													.card__list-item
+														span Кабель
+														span
+														span 20 м.
+													.card__list-item.card__list-item--price
+														span Розничная цена
+														span
+														span 480 000 с НДС
+
+												a(href="description.pdf" download).btn.btn--first Техническая характеристика
+													img(src=require("../images/arrow-down-to-line.svg"), alt="")
+
+
+						.card__block-footer 
+							span <span class="total-price">480000</span> рублей
+							span от 0% / мес. в лизинг
+							button.btn.btn--first.showPopup2 Рассчитать доставку и монтаж
+							.start-price 480000
+		seciton.documents 
+			.container 
+				h2.title.documents__title Документы весов
+				.documents__wrap 
+					a(href="description.pdf" download)
+						span Паспорт весов
+						img(src=require("../images/pdf.png"), alt="")
+					a(href="description2.pdf" download)
+						span Описание типа
+						img(src=require("../images/pdf.png"), alt="")
+
+
+		section.section-block.section-block--1
+			.container
+				.block
+					button.showMore Показать всё
+						img(src=require("../images/move-down.svg"), alt="")
+					.block__head 
+						h2.title.block__title Описание весов
+
+					.block__wrap 
+						.block__col 
+							.block__block
+								span.block__block-title Наша компания предлагает такие разновидности изделий:
+								ul.block__list
+									li.block__list-item бесфундаментные наземные двухплатформенные;
+									li.block__list-item наземные двухплатформенные;
+									li.block__list-item подземные двухплатформенные;
+									li.block__list-item подземные двухплатформенные с настилом.
+							.block__block
+								span.block__block-title При оценке стоимости автомобильных весов необходимо учитывать:
+								ul.block__list
+									li.block__list-item цели и задачи, с которыми они устанавливаются;
+									li.block__list-item необходимость автоматизации процесса;
+									li.block__list-item особенности места размещения;
+									li.block__list-item состояние подъездных путей;
+									li.block__list-item грузопоток;
+									li.block__list-item тип грунта.
+						.block__col 
+							p Каждый тип весов устанавливается в соответствии с особыми условиями эксплуатации, и они могут использоваться в промышленности, сельском хозяйстве (государственном и фермерском), системах складского учета, других отраслях. Мы предлагаем автомобильные механические весы 30 тонн различного типа или электронные системы, позволяющие автоматизировать контроль и учет привозимых или отгружаемых грузов.
+							p Также нужно определить, планируется ли расширение предприятия в ближайшее время.
+							p Предлагаемая предприятием <a href="">«Logotipe»</a> цена автомобильных весов 30 тонн является одной из самых доступных в отрасли. Это позволяет не экономить при заказе оборудования, чтобы весовая не стала «бутылочным горлышком», тормозящим и ограничивающим грузопоток. Этот момент важно учесть как для производственных предприятий, так и для сельскохозяйственных участков и пунктов переработки, вынужденных в сезон работать с повышенной нагрузкой.
+
+
+		section.section-block.section-block--2
+			.container 
+				.block 
+					button.showMore Показать всё
+						img(src=require("../images/move-down.svg"), alt="")
+					.block__head 
+						h2.title.block__title Технические характеристики весов	
+					.block__wrap
+						.block__col 
+							span.block__block-title Основные
+							ul.block__list 
+								li.block__list-item Максимальная нагрузка (т) – 60;
+								li.block__list-item Минимальная нагрузка (т) – 0,2;
+								li.block__list-item Дискретность отчета (d),(кг) – 20;
+								li.block__list-item Цена поверочного деления (e=d), (кг) – 20;
+								li.block__list-item Класс точности по ГОСТ OIML R 76-1-2011;
+								li.block__list-item Диапазон выборки массы тары для весов по ГОСТ OIML R 76-1-2011 — от 0 до НПВ;
+								li.block__list-item Пределы допускаемой погрешности (при первичной поверке/ при эксплуатации) с учетом максимальной нагрузки (кг): +/- 30/60;
+								li.block__list-item Межповерочный интервал 12 месяцев;
+								li.block__list-item Гарантийный срок эксплуатации 36 месяцев;
+								li.block__list-item Диапазон рабочих температур: грузоприемного устройства с датчиками -30/+40 ℃; весового терминала: -10/+40; 
+								li.block__list-item Параметры электрического питания весов, напряжение (B): 220 (+22/-33);
+								li.block__list-item Частота (Гц): 50 (+/-1);
+								li.block__list-item Направление движения: двухстороннее;
+								li.block__list-item Максимальная скорость заезда на весы (км/ч)- 5.
+
+		section.section-block 
+			.container 
+				.block.block--mode 
+					.block__head 
+						h2.title.block__title Комплектация весов
+					.block__wrap 
+						.block__col 
+							span.block__block-title Стандартная комплектация
+							ol.block__list 
+								li.block__list-item  <span>01</span> Грузоподъемная платформа — 1-2 шт. (в зависимости от длины весов)
+								li.block__list-item  <span>02</span> Тензометрические датчики (Zemic) — 1 комплект
+								li.block__list-item  <span>03</span> Весовой терминал (CAS) — 1 шт
+								li.block__list-item  <span>04</span> Паспорт и руководство по эксплуатации
+								li.block__list-item  <span>05</span> Паспорт и руководство по эксплуатации
+								li.block__list-item  <span>06</span> Комплект метизов
+								li.block__list-item  <span>07</span> Комплект соединительных проводов, центральный кабель 15 м. + гофра (металлорукав)
+						.block__col
+							.block__label 
+								.block__col
+									span.block__block-title Расширенная комплектацияю. (Специальное предложение)
+									ol.block__list 
+										li.block__list-item  <span>01</span> Персональный компьютер + принтер
+										li.block__list-item  <span>02</span> Базовое программное обеспечение: Весы Софт: 1С весовой терминал + отдельно дополнительные опции по желанию Заказчика
+										li.block__list-item  <span>03</span> Комплект видеонаблюдения + видео фиксация государственного номера транспортного средства
+
+										li.block__list-item  <span>04</span> Светофор с пультом управления двухсекционный + датчики положения транспортного средства (по желанию)
+										li.block__list-item  <span>05</span> Выносное дублирующее табло (уличное и комнатное исполнение)
+										li.block__list-item  <span>06</span> Расширенный диапазон рабочих температур (-50/+50) – тензометрические датчики производства HBM, C16A
+										li.block__list-item  <span>07</span> Боковое ограждение
+										li.block__list-item  <span>08</span> Грязезащита
+										li.block__list-item  <span>09</span> Серединный настил
+
+		section
+			.container 
+				.popular 
+					h2.title.popular__title Популярные модели
+					.catalog-block.catalog-block--mode.popular__wrap
+						.catalog-block__wrap
+							.card-item 
+								.card-item__pic 
+									img(src=require("../images/IMG_3391 1.png"), alt="")
+								span.card-item__name Автомобильные весы ЗЕВС 60 тонн 18 м
+								.card-item__footer 
+									.card-item__price 1 200 000 ₽
+									a(href="card-60-18.html").btn.card-item__btn.btn--first Подробнее
+							.card-item 
+								.card-item__pic 
+									img(src=require("../images/IMG_3391 1.png"), alt="")
+								span.card-item__name Автомобильные весы ЗЕВС 100 тонн 18 м
+								.card-item__footer 
+									.card-item__price 1 300 000 ₽
+									a(href="card-100-18.html").btn.card-item__btn.btn--first Подробнее

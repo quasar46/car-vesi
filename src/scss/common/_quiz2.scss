@@ -1,0 +1,211 @@
+.quiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+        border: 2px solid transparent;
+        border-radius: 16px;
+    }
+    .item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: flex-start;
+        gap: 24px;
+        &.hidden {
+            display: none;
+        }
+        @media (max-width: 1199px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .item__wrap {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 792px;
+        width: 100%;
+        border-radius: 40px;
+        padding: 40px;
+        @media (max-width: 767px) {
+            padding: 20px;
+        }
+    }
+    .item__price {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-blue);
+        color: #fff;
+        padding: 24px;
+        border-radius: 24px;
+
+        h3 {
+            font-size: 40px;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+        .price {
+            display: flex;
+            margin-top: 16px;
+            font-size: 40px;
+            font-weight: 400;
+            margin-bottom: 24px;
+            i {
+                font-style: normal;
+            }
+        }
+        @media (max-width: 1199px) {
+            order: -1;
+        }
+        @media (min-width: 1199px) {
+            position: sticky;
+            top: 102px;
+        }
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            &::after {
+                content: "";
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background-image: url("../images/Checkbox (1).svg");
+                background-size: cover;
+                @media (max-width: 767px) {
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+            span {
+                font-size: 24px;
+                font-weight: 400;
+                @media (max-width: 767px) {
+                    font-size: 18px;
+                }
+            }
+        }
+        input {
+            position: absolute;
+            z-index: -1;
+            visibility: hidden;
+
+            &:checked + label {
+                img {
+                    border: 2px solid #fe5a24;
+                }
+                &::after {
+                    background-image: url("../images/Checkbox.svg");
+                }
+            }
+        }
+
+        .item.hidden {
+            display: none;
+        }
+    }
+    .nextBtn {
+        opacity: 0.7;
+        pointer-events: none;
+    }
+
+    .nextBtn.valide {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+.quiz__first-step {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    // @media(max-width: 767px) {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+}
+
+.quiz__length-step {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 40px;
+    label {
+        display: flex;
+        &:after {
+            order: -1;
+        }
+    }
+    @media (max-width: 767px) {
+        gap: 20px;
+    }
+}
+
+.quiz__options-step {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    label {
+        flex-direction: column;
+        img {
+            border: 2px solid var(--color-blue);
+        }
+    }
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.quiz__item-text {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.quiz__name {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    @media (max-width: 767px) {
+        font-size: 28px;
+    }
+}
+
+.quiz__count {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #c9c9c9;
+    margin-bottom: 24px;
+    span {
+        &.active {
+            color: #fe5a24;
+        }
+    }
+}
+
+.item__footer {
+    margin-left: auto;
+    display: flex;
+    gap: 24px;
+    margin-top: 40px;
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}

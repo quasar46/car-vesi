@@ -1,0 +1,70 @@
+.team__wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 16px;
+        margin-bottom: 24px;
+    }
+}
+
+.team__title {
+    max-width: 790px;
+    width: 100%;
+    margin-bottom: 64px;
+    @media (max-width: 767px) {
+        margin-bottom: 16px;
+    }
+}
+
+.team__item {
+    display: flex;
+    flex-direction: column;
+    &.hidden {
+        display: none;
+    }
+}
+
+.team__pic {
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: 16px;
+}
+
+.team__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.team__name {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: $fontBase;
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
+}
+
+.team__job {
+    font-size: 18px;
+    font-weight: 500;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+.team__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.team__btn {
+    display: none;
+    @media (max-width: 767px) {
+        display: flex;
+        align-self: center;
+    }
+}

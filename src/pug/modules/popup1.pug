@@ -1,0 +1,18 @@
+.overlay.popup.popup1
+	.container
+		.popup__block
+			.popup__wrap 
+				button.popup__close 
+					img(src=require("../../images/close.svg"), alt="")
+				h2.popup__title Пригласить нас для участия в вашем тендере
+				span.popup__subtitle Заполните форму, мы свяжмся с вами в ближайшее время
+				form.form(action="")
+					.form__item
+						input(type="text" placeholder="Как к вам обращаться?" name="name" )
+					.form__item.form__item-lang 
+						input.tel(type="text" placeholder="+7 (999) 999 99 99" name="phone" required)
+					.form__item 
+						input(type="email" placeholder="Напишите  e-mail (не обязательно)" name="email")
+					button(type="submit").btn.btn--first.form__submit Узнать стоимость
+					span.form__policy Нажимая кнопку, Вы соглашаетесь с 
+						a(href="/privacy-policy.html") Политикой конфиденциальности

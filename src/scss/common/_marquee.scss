@@ -1,0 +1,80 @@
+$blockHeight: 164px;
+$blockHeightM: 100px;
+
+@-webkit-keyframes marquee {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+.b-marquee-line {
+    &__flow {
+        font-size: 0;
+        line-height: 0;
+        height: $blockHeight;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        &-in {
+            display: block;
+            height: $blockHeight;
+            .cssanimations & {
+                width: 200%;
+                position: absolute;
+                overflow: hidden;
+                -webkit-animation: marquee 40s linear infinite;
+                animation: marquee 10s linear infinite;
+                @media (max-width: 767px) {
+                    animation: marquee 5s linear infinite;
+                }
+            }
+            @media (max-width: 767px) {
+                height: $blockHeightM;
+            }
+        }
+        &-block {
+            white-space: nowrap;
+            .no-cssanimations &:last-child {
+                display: none;
+            }
+            .cssanimations & {
+                white-space: nowrap;
+                // float: left;
+                display: flex;
+                gap: 24px;
+                width: 50%;
+                @media (max-width: 767px) {
+                    gap: 16px;
+                }
+            }
+        }
+        &-item {
+            height: $blockHeight;
+            @media (max-width: 767px) {
+                height: $blockHeightM;
+            }
+        }
+        @media (max-width: 767px) {
+            height: $blockHeightM;
+        }
+    }
+    @media (max-width: 767px) {
+        margin: 0 -24px;
+    }
+}
+
+.b-marquee-line__flow-block img {
+    border-radius: 24px;
+}

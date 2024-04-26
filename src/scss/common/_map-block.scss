@@ -1,0 +1,30 @@
+.map-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    // background-color: #fff;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    .map {
+        margin-bottom: 40px;
+       
+    }
+    @media(max-width: 767px) {
+       padding-top: 40px;
+       padding-bottom: 40px;
+    }
+}
+.map-block__title {
+    text-align: center;
+    margin-bottom: 64px;
+    @media (max-width: 767px) {
+        margin-bottom: 16px;
+    }
+}
+
+.map {
+    height: 496px;
+    @media(max-width: 767px) {
+        height: 300px;
+    }
+}

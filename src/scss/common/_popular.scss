@@ -1,0 +1,12 @@
+.popular__title {
+    margin-bottom: 64px;
+    @media(max-width: 767px) {
+        margin-bottom: 24px;
+    }
+}
+
+.popular {
+    .catalog-block {
+        padding: 0;
+    }
+}

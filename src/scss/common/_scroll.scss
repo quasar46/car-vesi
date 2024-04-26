@@ -1,0 +1,5 @@
+.scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.5s, opacity 0.5s;
+}

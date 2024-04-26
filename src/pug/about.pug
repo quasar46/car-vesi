@@ -1,0 +1,234 @@
+extends layout
+block main 
+	main
+		section.breadcrumbs 
+			.container 
+				ul.breadcrumbs__list
+					li.breadcrumbs__item 
+						a(href="index.html") Главная
+					li.breadcrumbs__item 
+						span О компании
+
+		section.about
+			.container 
+				.about__head
+					h2.title.about__title НижВесКом в цифрах
+					span.about__subtitle Компания «НижВесКом» — российский производитель автомобильных весов. Начав свою деятельность в 2014 году, компания выросла в крупное предприятие полного цикла, выпускающее десятки моделей весового оборудование на продажу, а также создающая весы на заказ.
+				.about__grid 
+					.swiper.about__slider 
+						.swiper-wrapper.about__grid
+							.swiper-slide
+								span.about__grid-title 10 лет
+								p  стабильного роста бизнеса
+							.swiper-slide
+								span.about__grid-title 1500 единиц
+								p тензометрического оборудования на складе
+
+							.swiper-slide
+								span.about__grid-title 25 шт.
+								p Модельный ряд сертифицированного весового оборудования
+							.swiper-slide
+								span.about__grid-title 1500 единиц
+								p произведенного весового оборудования
+							.swiper-slide
+								span.about__grid-title 10
+								p Более 10 представительств по России
+
+		//- section.team 
+		//- 	.container
+		//- 		h2.title.team__title Наш коллектив обладает богатым опытом и стремится к достижению высоких результатов.
+		//- 		.team__container
+		//- 			.team__wrap 
+		//- 				.team__item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine") 
+		//- 					.team__pic 
+		//- 						img(src=require("../images/Rectangle 9.png"), alt="")
+		//- 					.team__footer
+		//- 						span.team__name Иван Иванов
+		//- 						span.team__job Должность
+		//- 				.team__item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine") 
+		//- 					.team__pic 
+		//- 						img(src=require("../images/Rectangle 9 (2).png"), alt="")
+		//- 					.team__footer
+		//- 						span.team__name Иван Иванов
+		//- 						span.team__job Должность
+		//- 				.team__item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+		//- 					.team__pic 
+		//- 						img(src=require("../images/Rectangle 9 (1).png"), alt="")
+		//- 					.team__footer
+		//- 						span.team__name Иван Иванов
+		//- 						span.team__job Должность
+		//- 				.team__item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+		//- 					.team__pic 
+		//- 						img(src=require("../images/Rectangle 9 (2).png"), alt="")
+		//- 					.team__footer
+		//- 						span.team__name Иван Иванов
+		//- 						span.team__job Должность
+		//- 				.team__item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+		//- 					.team__pic 
+		//- 						img(src=require("../images/Rectangle 9.png"), alt="")
+		//- 					.team__footer
+		//- 						span.team__name Иван Иванов
+		//- 						span.team__job Должность
+		//- 				.team__item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+		//- 					.team__pic 
+		//- 						img(src=require("../images/Rectangle 9 (1).png"), alt="")
+		//- 					span.team__name Иван Иванов
+		//- 					span.team__job Должность
+		//- 				.team__item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+		//- 					.team__pic 
+		//- 						img(src=require("../images/Rectangle 9.png"), alt="")
+		//- 					.team__footer
+		//- 						span.team__name Иван Иванов
+		//- 						span.team__job Должность
+		//- 				.team__item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+		//- 					.team__pic 
+		//- 						img(src=require("../images/Rectangle 9 (1).png"), alt="")
+		//- 					.team__footer
+		//- 						span.team__name Иван Иванов
+		//- 						span.team__job Должность
+		//- 				.team__item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+		//- 					.team__pic 
+		//- 						img(src=require("../images/Rectangle 9.png"), alt="")
+		//- 					.team__footer
+		//- 						span.team__name Иван Иванов
+		//- 						span.team__job Должность
+		//- 				.team__item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+		//- 					.team__pic 
+		//- 						img(src=require("../images/Rectangle 9.png"), alt="")
+		//- 					.team__footer
+		//- 						span.team__name Иван Иванов
+		//- 						span.team__job Должность
+		//- 			button.btn.btn--base.team__btn Посмотреть ещё
+		section.news 
+			.container 
+				h2.title.news__title Новости
+				.news__wrap 
+					.news__item 
+						.news__pic 
+							//- img(src=require('../images/'), alt='')
+						.news__name Название статьи
+						a(href="").news__link Подробнее
+					.news__item 
+						.news__pic 
+							//- img(src=require('../images/'), alt='')
+						.news__name Название статьи
+						a(href="").news__link Подробнее
+					.news__item 
+						.news__pic 
+							//- img(src=require('../images/'), alt='')
+						.news__name Название статьи
+						a(href="").news__link Подробнее
+					.news__item 
+						.news__pic 
+							//- img(src=require('../images/'), alt='')
+						.news__name Название статьи
+						a(href="").news__link Подробнее
+					.news__item 
+						.news__pic 
+							//- img(src=require('../images/'), alt='')
+						.news__name Название статьи
+						a(href="").news__link Подробнее
+					.news__item 
+						//- .news__pic 
+						//- img(src=require('../images/'), alt='')
+						.news__name Больше новостей на нашем Ютуб-канале
+						a.yt-link(href="https://www.youtube.com/shorts/IdMYizDUdag" target="_blank") 
+							img(src=require('../images/youtube_symbol.svg'), alt='')
+		section.map-block.p0 
+			.container 
+				h2.title.map-block__title Более 1500 единиц нашего весового оборудования установлено и успешно работает по всей стране
+			.map
+				<iframe src="https://yandex.ru/map-widget/v1/?ll=38.042455%2C55.691348&mode=usermaps&source=constructorLink&um=constructor%3Af4a0f01ae4f4eb38d37220424134ba8fc14e9bca9a23e2a182f80e75edca2508&z=9.2" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+			a(href="calc.html").btn.btn--first.fc Узнать стоимость
+
+		include modules/offer
+
+		section.products 
+			.container 
+				.products__head
+					h2.title.products__title Мы предлогаем
+					.swiper-navigation 
+						.swiper-button-prev 
+						.swiper-button-next 
+				.swiper.products__slider 
+					.swiper-wrapper 
+						.swiper-slide
+							.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+								.card-item__pic 
+									img(src=require("../images/IMG_3391 1 (2).png"), alt="")
+								span.card-item__name Автомобильные весы ЗЕВС 100 тонн 18 м
+								.card-item__footer 
+									.card-item__price 1 300 000 ₽
+									a(href="card-100-18.html").btn.card-item__btn.btn--first Подробнее
+						.swiper-slide
+							.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+								.card-item__pic 
+									img(src=require("../images/IMG_3391 1 (1).png"), alt="")
+								span.card-item__name Автомобильные весы ЗЕВС 80 тонн 18 м
+								.card-item__footer 
+									.card-item__price 1 250 000 ₽
+									a(href="card-80-18.html").btn.card-item__btn.btn--first Подробнее
+						.swiper-slide
+							.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+								.card-item__pic 
+									img(src=require("../images/IMG_3391 1 (1).png"), alt="")
+								span.card-item__name Автомобильные весы ЗЕВС 80 тонн 16 м
+								.card-item__footer 
+									.card-item__price 1 150 000 ₽
+									a(href="card-80-16.html").btn.card-item__btn.btn--first Подробнее	
+						.swiper-slide
+							.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+								.card-item__pic 
+									img(src=require("../images/IMG_3391 1.png"), alt="")
+								span.card-item__name Автомобильные весы ЗЕВС 60 тонн 18 м
+								.card-item__footer 
+									.card-item__price 1 200 000 ₽
+									a(href="card-60-18.html").btn.card-item__btn.btn--first Подробнее
+						.swiper-slide
+							.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+								.card-item__pic 
+									img(src=require("../images/IMG_3391 1.png"), alt="")
+								span.card-item__name Автомобильные весы ЗЕВС 60 тонн 16 м
+								.card-item__footer 
+									.card-item__price 1 100 000 ₽
+									a(href="card-60-16.html").btn.card-item__btn.btn--first Подробнее	
+						.swiper-slide
+							.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+								.card-item__pic 
+									img(src=require("../images/IMG_3391 1.png"), alt="")
+								span.card-item__name Автомобильные весы ЗЕВС 60 тонн 12 м
+								.card-item__footer 
+									.card-item__price 810 000 ₽
+									a(href="card-60-12.html").btn.card-item__btn.btn--first Подробнее	
+						.swiper-slide
+							.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+								.card-item__pic 
+									img(src=require("../images/IMG_3391 1.png"), alt="")
+								span.card-item__name Автомобильные весы ЗЕВС 60 тонн 8 м
+								.card-item__footer 
+									.card-item__price 480 000 ₽
+									a(href="card-60-8.html").btn.card-item__btn.btn--first Подробнее	
+						.swiper-slide
+							.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+								.card-item__pic 
+									img(src=require("../images/IMG_3391 1 (3).png"), alt="")
+								span.card-item__name Автомобильные весы ЗЕВС 40 тонн 8 м
+								.card-item__footer 
+									.card-item__price 450 000 ₽
+									a(href="card-40-8.html").btn.card-item__btn.btn--first Подробнее
+						.swiper-slide
+							.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+								.card-item__pic 
+									img(src=require("../images/IMG_3391 1 (3).png"), alt="")
+								span.card-item__name Автомобильные весы ЗЕВС 40 тонн 7 м
+								.card-item__footer 
+									.card-item__price 420 000 ₽
+									a(href="card-40-7.html").btn.card-item__btn.btn--first Подробнее
+						.swiper-slide
+							.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+								.card-item__pic 
+									img(src=require("../images/IMG_3391 1 (3).png"), alt="")
+								span.card-item__name Автомобильные весы ЗЕВС 30 тонн 6 м
+								.card-item__footer 
+									.card-item__price 400 000 ₽
+									a(href="card-30-6.html").btn.card-item__btn.btn--first Подробнее									

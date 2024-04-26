@@ -1,0 +1,27 @@
+.about-block__wrap {
+  display: grid;
+  grid-template-columns: 550px auto;
+  gap: 66px;
+  @media(max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.about-block__text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-block__pic {
+    border-radius: 24px;
+}
+
+.about-block__title {
+    margin-bottom: 24px;
+}

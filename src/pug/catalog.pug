@@ -1,0 +1,88 @@
+extends layout
+block main 
+	main
+		section.breadcrumbs 
+			.container 
+				ul.breadcrumbs__list
+					li.breadcrumbs__item 
+						a(href="index.html") Главная
+					li.breadcrumbs__item 
+						span Каталог
+		section.catalog-block.catalog-block--mode
+
+			.container 	
+				h2.title.catalog-block__title Каталог
+				.catalog-block__wrap 
+					.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+						.card-item__pic 
+							img(src=require("../images/IMG_3391 1 (2).png"), alt="")
+						span.card-item__name Автомобильные весы ЗЕВС 100 тонн 18 м
+						.card-item__footer 
+							.card-item__price 1 300 000 ₽
+							a(href="card-100-18.html").btn.card-item__btn.btn--first Подробнее
+					.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+						.card-item__pic 
+							img(src=require("../images/IMG_3391 1 (1).png"), alt="")
+						span.card-item__name Автомобильные весы ЗЕВС 80 тонн 18 м
+						.card-item__footer 
+							.card-item__price 1 250 000 ₽
+							a(href="card-80-18.html").btn.card-item__btn.btn--first Подробнее
+					.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+						.card-item__pic 
+							img(src=require("../images/IMG_3391 1 (1).png"), alt="")
+						span.card-item__name Автомобильные весы ЗЕВС 80 тонн 16 м
+						.card-item__footer 
+							.card-item__price 1 150 000 ₽
+							a(href="card-80-16.html").btn.card-item__btn.btn--first Подробнее																																		
+					.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+						.card-item__pic 
+							img(src=require("../images/IMG_3391 1.png"), alt="")
+						span.card-item__name Автомобильные весы ЗЕВС 60 тонн 18 м
+						.card-item__footer 
+							.card-item__price 1 200 000 ₽
+							a(href="card-60-18.html").btn.card-item__btn.btn--first Подробнее
+					.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+						.card-item__pic 
+							img(src=require("../images/IMG_3391 1.png"), alt="")
+						span.card-item__name Автомобильные весы ЗЕВС 60 тонн 16 м
+						.card-item__footer 
+							.card-item__price 1 100 000 ₽
+							a(href="card-60-16.html").btn.card-item__btn.btn--first Подробнее																																		
+					.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+						.card-item__pic 
+							img(src=require("../images/IMG_3391 1.png"), alt="")
+						span.card-item__name Автомобильные весы ЗЕВС 60 тонн 12 м
+						.card-item__footer 
+							.card-item__price 810 000 ₽
+							a(href="card-60-12.html").btn.card-item__btn.btn--first Подробнее																																		
+					.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+						.card-item__pic 
+							img(src=require("../images/IMG_3391 1.png"), alt="")
+						span.card-item__name Автомобильные весы ЗЕВС 60 тонн 8 м
+						.card-item__footer 
+							.card-item__price 480 000 ₽
+							a(href="card-60-8.html").btn.card-item__btn.btn--first Подробнее																																		
+					.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+						.card-item__pic 
+							img(src=require("../images/IMG_3391 1 (3).png"), alt="")
+						span.card-item__name Автомобильные весы ЗЕВС 40 тонн 8 м
+						.card-item__footer 
+							.card-item__price 450 000 ₽
+							a(href="card-40-8.html").btn.card-item__btn.btn--first Подробнее
+					.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+						.card-item__pic 
+							img(src=require("../images/IMG_3391 1 (3).png"), alt="")
+						span.card-item__name Автомобильные весы ЗЕВС 40 тонн 7 м
+						.card-item__footer 
+							.card-item__price 420 000 ₽
+							a(href="card-40-7.html").btn.card-item__btn.btn--first Подробнее
+					.card-item(data-aos="fade-zoom-in" data-aos-easing="ease-in-sine")
+						.card-item__pic 
+							img(src=require("../images/IMG_3391 1 (3).png"), alt="")
+						span.card-item__name Автомобильные весы ЗЕВС 30 тонн 6 м
+						.card-item__footer 
+							.card-item__price 400 000 ₽
+							a(href="card-30-6.html").btn.card-item__btn.btn--first Подробнее	
+
+
+		include modules/offer
